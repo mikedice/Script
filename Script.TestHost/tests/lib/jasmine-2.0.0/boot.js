@@ -33,7 +33,7 @@
      * Build up the functions that will be exposed as the Jasmine public interface. A project can customize, rename or alias any of these functions as desired, provided the implementation remains unchanged.
      */
 
-    // MAC Custom override of jasmine boot. Add a reporter that gets called when a spec finishes.
+    // Custom override of jasmine boot. Add a reporter that gets called when a spec finishes.
     var overrideReporter = new jasmine.JsApiReporter({ timer: new jasmine.Timer() });
     overrideReporter.specDone = function (result) {
 
